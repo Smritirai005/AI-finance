@@ -1,1 +1,1 @@
-# ama-project
+# its a ai finance project
