@@ -9,7 +9,7 @@ export default clerkMiddleware(async(auth,req)=>{
     if(!userId && isProtected(req)){
         const {redirectToSignIn}=await auth()
 
-        return redirectToSignIn;
+        return redirectToSignIn();
         
     }
 
