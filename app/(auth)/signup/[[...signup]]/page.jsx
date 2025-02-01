@@ -1,14 +1,14 @@
-
 "use client";
-import { SignIn } from '@clerk/clerk-react'
+import { SignUp } from '@clerk/nextjs'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-      <SignIn></SignIn>
+        <SignUp></SignUp>
+      
     </div>
   )
 }
 
-export default page;
+export default page
