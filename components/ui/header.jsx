@@ -1,9 +1,16 @@
 import React from 'react'
+import { SignInButton,SignedOut,SignedIn,UserButton } from '@clerk/nextjs'
+
 
 const Header = () => {
   return (
     <div>
-      header
+        <SignedOut>
+            <SignInButton />
+        </SignedOut>
+        <SignedIn>
+            <UserButton />
+        </SignedIn>
     </div>
   )
 }
