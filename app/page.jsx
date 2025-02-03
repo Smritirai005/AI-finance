@@ -64,7 +64,7 @@ export default function Home() {
             {testimonialsData.map((testimonial, index) => (
               <Card key={index} className="p-8 bg-white shadow rounded-lg">
                 <CardContent className="pt-4">
-                  <div>
+                  <div className="flex items-center mb-4">
                   <Image
                     src={testimonial.image}
                     alt={testimonial.name}
@@ -77,6 +77,7 @@ export default function Home() {
                     <div className=" text-sm text-gray-600">{testimonial.role}</div>
                   </div>
                   </div>
+                  <p className="text-gray-600 mt-4">{testimonial.quote}</p>
 
                 </CardContent>
               </Card>
