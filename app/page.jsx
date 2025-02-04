@@ -3,6 +3,7 @@ import { CardContent,Card } from "@/components/ui/card";
 import HeroSection from "@/components/ui/hero";
 import { statsData,featuresData,howItWorksData, testimonialsData } from "@/data/landing";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -85,6 +86,20 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="py-20 bg-blue-600">
+        <div className="container mx-auto px-4 text-center">
+          <div className="text-center mb-4">
+            <h2 className="text-4xl font-bold">Ready to take control of your finance ?</h2>
+          </div>
+          <p className="text-blue-100 mb-8 max-w-2xl mx-auto">Join thousand of users who are already manging their finances
+            smarter with fealth.
+          </p>
+          <Link href="/dashboard">
+              <Button size="lg" className="bg-white text-blue hover:bg-blue-50 animate-bounce">Start free trial</Button>
+          </Link>
+        </div>
+      </section>
+
       
       
       
