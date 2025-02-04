@@ -10,7 +10,7 @@ export default clerkMiddleware(async (auth, req) => {
   const { userId } = await auth();
 
   if (!userId && isProtected(req)) {
-    return auth().redirectToSignIn(); // Shorter way to redirect to sign-in
+    return auth().redirectToSignIn; // Shorter way to redirect to sign-in
   }
 });
 
