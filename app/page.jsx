@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import { CardContent,Card } from "@/components/ui/card";
 import HeroSection from "@/components/ui/hero";
